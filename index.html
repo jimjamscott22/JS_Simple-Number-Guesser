@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Guess the Number</h1>
+        <select id="difficulty">
+            <option value="easy">Easy (1–50)</option>
+            <option value="medium">Medium (1–100)</option>
+            <option value="hard">Hard (1–200)</option>
+        </select>
+        <input type="number" id="guessInput" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+        <p id="hint"></p>
+        <p id="timer">⏱️ Time: 0s</p>
+        <p id="score">🏆 Score: 0</p>
+        <p id="leaderboard-title">🏅 Leaderboard:</p>
+        <ul id="leaderboard"></ul>
+        <button onclick="resetGame()">🔄 Reset Game</button>
+    </div>
+
+    <audio id="winSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"></audio>
+    <audio id="loseSound" src="https://www.soundjay.com/misc/sounds/buzz-sound-effect-01.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
